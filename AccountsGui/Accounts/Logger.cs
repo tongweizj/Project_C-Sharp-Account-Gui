@@ -38,7 +38,7 @@ namespace Accounts
             }
         }
 
-        public static void ShowLonginEvents(string filename)
+        public static void SaveLoginEvents(string filename)
         {
             StreamWriter writer = new StreamWriter(filename); // Setp-2
             writer.WriteLine($"Current Time:{Utils.Now}");
@@ -51,6 +51,17 @@ namespace Accounts
 
             writer.Close(); // Setp-3
 
+        }
+
+        public static void ShowLoginEvents()
+        {
+            Console.WriteLine($"Current Time:{Utils.Now}");
+            int i = 0;
+            foreach (string item in LoginEvents)
+            {
+                i++;
+                Console.WriteLine($"{i}. {item}");
+            }
         }
         public static void ShowTransactionEvents()
         {

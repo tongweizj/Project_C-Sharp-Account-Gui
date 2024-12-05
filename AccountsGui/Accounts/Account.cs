@@ -62,29 +62,13 @@ namespace Accounts
 
         public virtual void OnTransactionOccur(object sender, EventArgs e)
         {
-
+            OnTransaction?.Invoke(sender,e);
         }
         public override string ToString()
         {
-            string result = $"Account Number: {Number}\n";
-            result += "Users: ";
-            result += this.Users.Count > 0 ? string.Join(", ", this.Users) : "None";
-            result += "\n";
+            string result = $" {Number} {string.Join(", ", this.Users)} ${Balance}  {String.Join(" ", this.Transactions)}";
 
-            result += $"Balance: {Balance:C}\n";
 
-            result += "Transactions:\n";
-            if (this.Transactions.Count > 0)
-            {
-                foreach (var transaction in this.Transactions)
-                {
-                    result += $"- {transaction}\n";
-                }
-            }
-            else
-            {
-                result += "No transactions.\n";
-            }
 
             return result;
 

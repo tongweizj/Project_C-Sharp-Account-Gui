@@ -47,8 +47,8 @@ namespace Accounts
         public override string ToString()
         {
             // It does not take any parameter but returns a string representing the name of the person and if he is authenticated or not.
-            String authStr = IsAuthenticated ? " is authenticated!" : "not authenticated!";
-            return $"Name: {Name}, {authStr}";
+            //String authStr = IsAuthenticated ? " is authenticated!" : "not authenticated!";
+            return $"{Name}";
         }
     }
 }
