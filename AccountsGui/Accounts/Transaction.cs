@@ -23,7 +23,8 @@ namespace Accounts
 
         public override string ToString()
         {
-            return $"{AccountNumber} ${Amount} withdrawn by {Originator} on {Time}";
+            string type = this.Amount>0? "deposited" : "withdrawn";
+            return $"{AccountNumber} ${Math.Abs(Amount)} {type} by {Originator} on {Time}";
         }
     }
 }

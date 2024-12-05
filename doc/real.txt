@@ -1,0 +1,137 @@
+
+All acounts:
+[VS-100000,  VS-100000 Narendra, Ilia, Mehrdad $0  ]
+[VS-100001,  VS-100001 Vinay, Arben, Patrick $150  ]
+[SV-100002,  SV-100002 Yin, Hao, Jake $5000  ]
+[SV-100003,  SV-100003 Mayy, Nicoletta $0  ]
+[CK-100004,  CK-100004 Mehrdad, Arben, Yin $2000  ]
+[CK-100005,  CK-100005 Jake, Nicoletta $1500  ]
+[VS-100006,  VS-100006 Ilia, Vinay $50  ]
+[SV-100007,  SV-100007 Patrick, Hao $1000  ]
+
+All Users:
+ VS-100000 Narendra, Ilia, Mehrdad $1621  VS-100000 $1500 withdrawn by Narendra on 2024/9/3 18:40 VS-100000 $-200 withdrawn by Ilia on 2024/9/3 21:16 VS-100000 $-25 withdrawn by Mehrdad on 2024/9/3 22:33 VS-100000 $-15 withdrawn by Narendra on 2024/9/4 00:28 VS-100000 $-39 withdrawn by Ilia on 2024/9/4 01:51 VS-100000 $400 withdrawn by Narendra on 2024/9/4 02:38
+ VS-100001 Vinay, Arben, Patrick $590  VS-100001 $500 withdrawn by Narendra on 2024/9/4 04:47 VS-100001 $-25 withdrawn by Vinay on 2024/9/4 08:25 VS-100001 $-20 withdrawn by Arben on 2024/9/4 09:28 VS-100001 $-15 withdrawn by Patrick on 2024/9/4 10:40
+ SV-100002 Yin, Hao, Jake $4505.99  SV-100002 $-300 withdrawn by Yin on 2024/9/4 12:46 SV-100002 $-32.90 withdrawn by Yin on 2024/9/4 14:17 SV-100002 $-50 withdrawn by Hao on 2024/9/4 16:26 SV-100002 $-111.11 withdrawn by Jake on 2024/9/4 17:52
+ SV-100003 Mayy, Nicoletta $271.79  SV-100003 $300 withdrawn by Vinay on 2024/9/4 19:23 SV-100003 $32.90 withdrawn by Mehrdad on 2024/9/4 21:12 SV-100003 $50 withdrawn by Patrick on 2024/9/4 22:59 SV-100003 $-111.11 withdrawn by Nicoletta on 2024/9/5 01:16
+ CK-100004 Mehrdad, Arben, Yin $728.77  CK-100004 $33.33 withdrawn by Hao on 2024/9/5 02:06 CK-100004 $40.44 withdrawn by Hao on 2024/9/5 04:26 CK-100004 $-150 withdrawn by Mehrdad on 2024/9/5 06:44 CK-100004 $-200 withdrawn by Arben on 2024/9/5 08:18 CK-100004 $-645 withdrawn by Yin on 2024/9/5 10:45 CK-100004 $-350 withdrawn by Yin on 2024/9/5 11:58
+ CK-100005 Jake, Nicoletta $-871.23  CK-100005 $33.33 withdrawn by Jake on 2024/9/5 12:50 CK-100005 $40.44 withdrawn by Hao on 2024/9/5 14:12 CK-100005 $-450 withdrawn by Nicoletta on 2024/9/5 16:39 CK-100005 $-500 withdrawn by Jake on 2024/9/5 18:35 CK-100005 $-645 withdrawn by Nicoletta on 2024/9/5 20:54 CK-100005 $-850 withdrawn by Nicoletta on 2024/9/5 22:44
+ VS-100006 Ilia, Vinay $705  VS-100006 $700 withdrawn by Narendra on 2024/9/6 00:07 VS-100006 $-20 withdrawn by Vinay on 2024/9/6 01:20 VS-100006 $-10 withdrawn by Ilia on 2024/9/6 01:44 VS-100006 $-15 withdrawn by Ilia on 2024/9/6 01:57
+ SV-100007 Patrick, Hao $1271.79  SV-100007 $300 withdrawn by Vinay on 2024/9/6 03:32 SV-100007 $32.90 withdrawn by Mehrdad on 2024/9/6 04:52 SV-100007 $50 withdrawn by Patrick on 2024/9/6 06:54 SV-100007 $-111.11 withdrawn by Hao on 2024/9/6 09:34
+
+
+Exceptions:
+PASSWORD_INCORRECT
+USER_NOT_LOGGED_IN
+NAME_NOT_ASSOCIATED_WITH_ACCOUNT
+NAME_NOT_ASSOCIATED_WITH_ACCOUNT
+AccountException?NAME_NOT_ASSOCIATED_WITH_ACCOUNT
+AccountException?ACCOUNT_DOES_NOT_EXIST
+AccountException?USER_DOES_NOT_EXIST
+
+
+All transactions
+Loaded assembly: /Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/gac/System.Core/4.0.0.0__b77a5c561934e089/System.Core.dll [External]
+
+Before PrepareMonthlyReport()
+ VS-100000 Narendra, Ilia, Mehrdad $1621  VS-100000 $1500 withdrawn by Narendra on 2024/9/3 18:40 VS-100000 $-200 withdrawn by Ilia on 2024/9/3 21:16 VS-100000 $-25 withdrawn by Mehrdad on 2024/9/3 22:33 VS-100000 $-15 withdrawn by Narendra on 2024/9/4 00:28 VS-100000 $-39 withdrawn by Ilia on 2024/9/4 01:51 VS-100000 $400 withdrawn by Narendra on 2024/9/4 02:38
+
+After PrepareMonthlyReport()
+ VS-100000 Narendra, Ilia, Mehrdad $1621.0000  
+
+Before PrepareMonthlyReport()
+ VS-100001 Vinay, Arben, Patrick $590  VS-100001 $500 withdrawn by Narendra on 2024/9/4 04:47 VS-100001 $-25 withdrawn by Vinay on 2024/9/4 08:25 VS-100001 $-20 withdrawn by Arben on 2024/9/4 09:28 VS-100001 $-15 withdrawn by Patrick on 2024/9/4 10:40
+
+After PrepareMonthlyReport()
+ VS-100001 Vinay, Arben, Patrick $587.50625  
+
+Before PrepareMonthlyReport()
+ SV-100002 Yin, Hao, Jake $4505.99  SV-100002 $-300 withdrawn by Yin on 2024/9/4 12:46 SV-100002 $-32.90 withdrawn by Yin on 2024/9/4 14:17 SV-100002 $-50 withdrawn by Hao on 2024/9/4 16:26 SV-100002 $-111.11 withdrawn by Jake on 2024/9/4 17:52
+
+After PrepareMonthlyReport()
+ SV-100002 Yin, Hao, Jake $4509.6224875  
+
+Before PrepareMonthlyReport()
+ SV-100003 Mayy, Nicoletta $271.79  SV-100003 $300 withdrawn by Vinay on 2024/9/4 19:23 SV-100003 $32.90 withdrawn by Mehrdad on 2024/9/4 21:12 SV-100003 $50 withdrawn by Patrick on 2024/9/4 22:59 SV-100003 $-111.11 withdrawn by Nicoletta on 2024/9/5 01:16
+
+After PrepareMonthlyReport()
+ SV-100003 Mayy, Nicoletta $269.790  
+
+Before PrepareMonthlyReport()
+ CK-100004 Mehrdad, Arben, Yin $728.77  CK-100004 $33.33 withdrawn by Hao on 2024/9/5 02:06 CK-100004 $40.44 withdrawn by Hao on 2024/9/5 04:26 CK-100004 $-150 withdrawn by Mehrdad on 2024/9/5 06:44 CK-100004 $-200 withdrawn by Arben on 2024/9/5 08:18 CK-100004 $-645 withdrawn by Yin on 2024/9/5 10:45 CK-100004 $-350 withdrawn by Yin on 2024/9/5 11:58
+
+After PrepareMonthlyReport()
+ CK-100004 Mehrdad, Arben, Yin $728.77365416666666666666666667  
+
+Before PrepareMonthlyReport()
+ CK-100005 Jake, Nicoletta $-871.23  CK-100005 $33.33 withdrawn by Jake on 2024/9/5 12:50 CK-100005 $40.44 withdrawn by Hao on 2024/9/5 14:12 CK-100005 $-450 withdrawn by Nicoletta on 2024/9/5 16:39 CK-100005 $-500 withdrawn by Jake on 2024/9/5 18:35 CK-100005 $-645 withdrawn by Nicoletta on 2024/9/5 20:54 CK-100005 $-850 withdrawn by Nicoletta on 2024/9/5 22:44
+
+After PrepareMonthlyReport()
+ CK-100005 Jake, Nicoletta $-871.8930125  
+
+Before PrepareMonthlyReport()
+ VS-100006 Ilia, Vinay $705  VS-100006 $700 withdrawn by Narendra on 2024/9/6 00:07 VS-100006 $-20 withdrawn by Vinay on 2024/9/6 01:20 VS-100006 $-10 withdrawn by Ilia on 2024/9/6 01:44 VS-100006 $-15 withdrawn by Ilia on 2024/9/6 01:57
+
+After PrepareMonthlyReport()
+ VS-100006 Ilia, Vinay $704.16875  
+
+Before PrepareMonthlyReport()
+ SV-100007 Patrick, Hao $1271.79  SV-100007 $300 withdrawn by Vinay on 2024/9/6 03:32 SV-100007 $32.90 withdrawn by Mehrdad on 2024/9/6 04:52 SV-100007 $50 withdrawn by Patrick on 2024/9/6 06:54 SV-100007 $-111.11 withdrawn by Hao on 2024/9/6 09:34
+
+After PrepareMonthlyReport()
+ SV-100007 Patrick, Hao $1271.040  
+Current Time:2024/9/6 15:52
+1. PersonName: Narendra, Success:True, Time: 2024/9/3 10:14.
+2. PersonName: Ilia, Success:True, Time: 2024/9/3 11:15.
+3. PersonName: Mehrdad, Success:True, Time: 2024/9/3 12:04.
+4. PersonName: Vinay, Success:True, Time: 2024/9/3 13:43.
+5. PersonName: Arben, Success:True, Time: 2024/9/3 14:19.
+6. PersonName: Patrick, Success:True, Time: 2024/9/3 15:15.
+7. PersonName: Yin, Success:True, Time: 2024/9/3 16:34.
+8. PersonName: Hao, Success:True, Time: 2024/9/3 17:18.
+9. PersonName: Nicoletta, Success:True, Time: 2024/9/3 17:57.
+10. PersonName: Jake, Success:True, Time: 2024/9/3 18:17.
+11. PersonName: Jake, Success:False, Time: 2024/9/6 09:49.
+Current Time:2024/9/6 16:47
+1. PersonName: Narendra, Amount: 1500,  Success: True, Time: 2024/9/3 19:45
+2. PersonName: Ilia, Amount: 200,  Success: True, Time: 2024/9/3 20:51
+3. PersonName: Mehrdad, Amount: 25,  Success: True, Time: 2024/9/3 21:31
+4. PersonName: Narendra, Amount: 15,  Success: True, Time: 2024/9/3 22:51
+5. PersonName: Ilia, Amount: 39,  Success: True, Time: 2024/9/4 00:44
+6. PersonName: Narendra, Amount: 400,  Success: True, Time: 2024/9/4 03:56
+7. PersonName: Narendra, Amount: 500,  Success: True, Time: 2024/9/4 06:12
+8. PersonName: Vinay, Amount: 25,  Success: True, Time: 2024/9/4 06:58
+9. PersonName: Arben, Amount: 20,  Success: True, Time: 2024/9/4 08:47
+10. PersonName: Patrick, Amount: 15,  Success: True, Time: 2024/9/4 10:39
+11. PersonName: Yin, Amount: 300,  Success: True, Time: 2024/9/4 11:09
+12. PersonName: Yin, Amount: 32.90,  Success: True, Time: 2024/9/4 12:53
+13. PersonName: Hao, Amount: 50,  Success: True, Time: 2024/9/4 14:54
+14. PersonName: Jake, Amount: 111.11,  Success: True, Time: 2024/9/4 17:45
+15. PersonName: Vinay, Amount: 300,  Success: True, Time: 2024/9/4 20:21
+16. PersonName: Mehrdad, Amount: 32.90,  Success: True, Time: 2024/9/4 21:50
+17. PersonName: Patrick, Amount: 50,  Success: True, Time: 2024/9/4 23:44
+18. PersonName: Nicoletta, Amount: 111.11,  Success: True, Time: 2024/9/5 01:13
+19. PersonName: Hao, Amount: 33.33,  Success: True, Time: 2024/9/5 02:50
+20. PersonName: Hao, Amount: 40.44,  Success: True, Time: 2024/9/5 05:45
+21. PersonName: Mehrdad, Amount: 150,  Success: True, Time: 2024/9/5 06:23
+22. PersonName: Arben, Amount: 200,  Success: True, Time: 2024/9/5 08:05
+23. PersonName: Yin, Amount: 645,  Success: True, Time: 2024/9/5 09:45
+24. PersonName: Yin, Amount: 350,  Success: True, Time: 2024/9/5 10:54
+25. PersonName: Jake, Amount: 33.33,  Success: True, Time: 2024/9/5 13:39
+26. PersonName: Hao, Amount: 40.44,  Success: True, Time: 2024/9/5 14:50
+27. PersonName: Nicoletta, Amount: 450,  Success: True, Time: 2024/9/5 16:02
+28. PersonName: Jake, Amount: 500,  Success: True, Time: 2024/9/5 18:10
+29. PersonName: Nicoletta, Amount: 645,  Success: True, Time: 2024/9/5 19:33
+30. PersonName: Nicoletta, Amount: 850,  Success: True, Time: 2024/9/5 22:22
+31. PersonName: Narendra, Amount: 700,  Success: True, Time: 2024/9/6 00:17
+32. PersonName: Vinay, Amount: 20,  Success: True, Time: 2024/9/6 00:23
+33. PersonName: Ilia, Amount: 10,  Success: True, Time: 2024/9/6 01:35
+34. PersonName: Ilia, Amount: 15,  Success: True, Time: 2024/9/6 01:52
+35. PersonName: Vinay, Amount: 300,  Success: True, Time: 2024/9/6 04:15
+36. PersonName: Mehrdad, Amount: 32.90,  Success: True, Time: 2024/9/6 06:10
+37. PersonName: Patrick, Amount: 50,  Success: True, Time: 2024/9/6 08:25
+38. PersonName: Hao, Amount: 111.11,  Success: True, Time: 2024/9/6 09:27
+39. PersonName: Vinay, Amount: 12.5,  Success: False, Time: 2024/9/6 11:22
+40. PersonName: Narendra, Amount: 12.5,  Success: False, Time: 2024/9/6 12:59
+41. PersonName: Arben, Amount: 5825,  Success: False, Time: 2024/9/6 14:15
+42. PersonName: Yin, Amount: 1500,  Success: False, Time: 2024/9/6 15:38

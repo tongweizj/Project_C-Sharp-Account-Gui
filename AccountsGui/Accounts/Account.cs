@@ -66,7 +66,17 @@ namespace Accounts
         }
         public override string ToString()
         {
-            string result = $" {Number} {string.Join(", ", this.Users)} ${Balance}  {String.Join(" ", this.Transactions)}";
+            string balance = $"";
+            if (Balance > 0)
+            {
+                balance = $"${Balance}";
+            }
+            else
+            {
+                balance = $"-${Math.Abs(Balance)}";
+            }
+            
+            string result = $"{Number} {string.Join(", ", this.Users)} {balance}\n  {String.Join("\n  ", this.Transactions)}";
 
 
 

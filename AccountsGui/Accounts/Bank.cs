@@ -112,10 +112,10 @@ namespace Accounts
             //saves the json string to the file
             File.WriteAllText(filename, serializer.Serialize(Users));
         }
-        //public static void PrintPersons()
-        //{
-        //    Console.WriteLine(String.Join("\n", Users));
-        //}
+        public static void PrintPersons()
+        {
+            Console.WriteLine(String.Join("\n", Users));
+        }
 
         public static Person GetUser(string name)
         {
@@ -131,11 +131,11 @@ namespace Accounts
             }
             catch (AccountException ex)
             {
-                Console.WriteLine("AccountException：" + ex.Message);
+                Console.WriteLine( ex.Message);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("SystemException：" + ex.Message);
+                Console.WriteLine(ex.Message);
             }
             return null;
         }
@@ -155,11 +155,11 @@ namespace Accounts
             }
             catch (AccountException ex)
             {
-                Console.WriteLine("AccountException：" + ex.Message);
+                Console.WriteLine(ex.Message);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("SystemException：" + ex.Message);
+                Console.WriteLine(ex.Message);
             }
             return null;
         }
@@ -192,11 +192,10 @@ namespace Accounts
             account.AddUser(person);
         }
         public static List<Transaction> GetAllTransactions() {
-            List<Transaction> transactions = new List<Transaction>();
+            List<Transaction> transactions = new List<Transaction> { };
             foreach (var entry in Accounts)
             {
-                transactions.Concat(entry.Value.Transactions).ToList<Transaction>();
-                // do something with entry.Value or entry.Key
+                transactions.AddRange(entry.Value.Transactions.ToList<Transaction>());
             }
             return transactions;
         }

@@ -19,6 +19,7 @@ namespace Accounts
             Bank.PrintAccounts();
             Console.WriteLine("\nAll Users:");
             Bank.SaveUsers("SaveUsers.json");
+            Bank.PrintPersons();
 
             Person p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10;
             p0 = Bank.GetUser("Narendra");
@@ -61,7 +62,7 @@ namespace Accounts
             a.DoPurchase(15, p5);
             Console.WriteLine(a);
 
-            //a saving account
+            ////a saving account
             SavingAccount b = Bank.GetAccount("SV-100002") as SavingAccount;
             b.Withdraw(300, p6);
             b.Withdraw(32.90M, p6);
@@ -77,7 +78,7 @@ namespace Accounts
             b.Withdraw(111.11M, p10);
             Console.WriteLine(b);
 
-            //a checking account
+            ////a checking account
             CheckingAccount c = Bank.GetAccount("CK-100004") as CheckingAccount;
             c.Deposit(33.33M, p7);
             c.Deposit(40.44M, p7);
@@ -153,10 +154,11 @@ namespace Accounts
             }
             catch (AccountException e) { Console.WriteLine(e.Message); }
 
-            //show all transactions
+            ////show all transactions
             Console.WriteLine("\n\nAll transactions");
             foreach (var transaction in Bank.GetAllTransactions())
                 Console.WriteLine(transaction);
+
             foreach (var keyValuePair in Bank.Accounts)
             {
                 Account account = keyValuePair.Value;
@@ -168,8 +170,8 @@ namespace Accounts
                 Console.WriteLine(account);
             }
 
-            Logger.ShowLoginEvents();
-            Logger.ShowTransactionEvents();
+            //Logger.ShowLoginEvents();
+            //Logger.ShowTransactionEvents();
 
 
         }

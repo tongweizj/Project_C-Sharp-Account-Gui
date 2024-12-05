@@ -51,11 +51,11 @@ namespace Accounts
             }
             catch (AccountException ex)
             {
-                Console.WriteLine("AccountException：" + ex.Message);
+                Console.WriteLine( ex.Message);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("SystemException：" + ex.Message);
+                Console.WriteLine( ex.Message);
             }
         }
         public override void PrepareMonthlyReport()
