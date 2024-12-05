@@ -15,6 +15,7 @@ namespace Accounts
         {
             this.CredilLimit = creditLimit;
         }
+
         public void DoPayment(decimal amount, Person person)
         {
             base.Deposit(amount, person);
@@ -52,7 +53,11 @@ namespace Accounts
         }
         public override void PrepareMonthlyReport()
         {
-            base.Balance -= base.LowestBalance * INTEREST_RATE / 12;
+            foreach (var item in base.Transactions)
+            {
+                base.Balance += (item.Amount * INTEREST_RATE) / 12;
+            }
+            base.Balance -= (base.LowestBalance * INTEREST_RATE) / 12;
 
             base.Transactions.Clear();
         }

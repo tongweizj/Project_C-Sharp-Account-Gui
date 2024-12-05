@@ -20,7 +20,8 @@ namespace Accounts
             //   Current time(from Utils.Now);
             if (loginArgs != null)
             {
-                LoginEvents.Add($"PersonName: {loginArgs.PersonName}, Success:{loginArgs.Success}, Time: {Utils.Now}.");
+                string info = loginArgs.Success ? "successfully" : "unsuccessfully";
+                LoginEvents.Add($"{loginArgs.PersonName} logged in s{info} on {Utils.Now}");
             }
         }
 
@@ -30,9 +31,10 @@ namespace Accounts
             TransactionEventArgs transactionArgs = args as TransactionEventArgs;
             if (transactionArgs != null)
             {
-
-                string eventDetails = $"PersonName: {transactionArgs.PersonName}, Amount: {transactionArgs.Amount}, " +
-                                      $" Success: {transactionArgs.Success}, Time: {Utils.Now}";
+                //1 Narendra deposit $1,500.00 successfully on 2021-08-12 11:59
+                string successInfo = transactionArgs.Success ? "successfully" : "unsuccessfully";
+                //string amountInfo = (transactionArgs.Amount>0) ? "deposit" : "unsuccessfully";
+                string eventDetails = $"{transactionArgs.PersonName} deposit {transactionArgs.Amount} {successInfo} on {Utils.Now}";
 
                 TransactionEvents.Add(eventDetails);
             }
@@ -60,7 +62,7 @@ namespace Accounts
             foreach (string item in LoginEvents)
             {
                 i++;
-                Console.WriteLine($"{i}. {item}");
+                Console.WriteLine($"{i} {item}");
             }
         }
         public static void ShowTransactionEvents()
@@ -70,7 +72,7 @@ namespace Accounts
             foreach (string item in TransactionEvents)
             {
                 i++;
-                Console.WriteLine($"{i}. {item}");
+                Console.WriteLine($"{i} {item}");
             }
         }
     }

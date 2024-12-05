@@ -170,8 +170,8 @@ namespace Accounts
                 Console.WriteLine(account);
             }
 
-            //Logger.ShowLoginEvents();
-            //Logger.ShowTransactionEvents();
+            Logger.ShowLoginEvents();
+            Logger.ShowTransactionEvents();
 
 
         }

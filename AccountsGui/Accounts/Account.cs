@@ -32,8 +32,8 @@ namespace Accounts
         {
 
             this.Balance += amount;
-
-            // TODO: check why add this if?
+            
+            //// TODO: check why add this if?
             if (Balance < LowestBalance)
             {
                 LowestBalance = Balance;
@@ -64,6 +64,7 @@ namespace Accounts
         {
             OnTransaction?.Invoke(sender,e);
         }
+
         public override string ToString()
         {
             string balance = $"";
